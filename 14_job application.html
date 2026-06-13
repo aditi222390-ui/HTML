@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            background: #fff;
+            padding: 20px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Job Application Form</h2>
+
+    <!-- Personal Details -->
+    <h3>Personal Details</h3>
+
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" name="fullname">
+    </div>
+
+    <div class="form-group">
+        <label>Father's Name</label>
+        <input type="text" name="fathername">
+    </div>
+
+    <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" name="dob">
+    </div>
+
+    <div class="form-group">
+        <label>Gender</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="tel" name="mobile">
+    </div>
+
+    <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" name="email">
+    </div>
+
+    <!-- Education Details -->
+    <h3>Education Details</h3>
+
+    <table>
+        <tr>
+            <th>Qualification</th>
+            <th>Percentage</th>
+            <th>University/Board</th>
+            <th>Passing Year</th>
+        </tr>
+        <tr>
+            <td>10th</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>12th</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Graduation</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+
+    <div class="form-group">
+        <label>Additional Qualification</label>
+        <textarea rows="3"></textarea>
+    </div>
+
+    <!-- Experience Details -->
+    <h3>Experience Details</h3>
+
+    <div class="form-group">
+        <label>Total Experience (Years)</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Current Experience</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Current Company</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Designation</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Current Salary</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Skills</label>
+        <textarea rows="4"></textarea>
+    </div>
+
+    <!-- Address Details -->
+    <h3>Address Details</h3>
+
+    <div class="form-group">
+        <label>Address</label>
+        <textarea rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>City</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>State</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>PIN Code</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Country</label>
+        <input type="text">
+    </div>
+
+    <button type="submit">Submit Application</button>
+
+</div>
+
+</body>
+</html>
