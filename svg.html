@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SVG Peacock</title>
+<style>
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        background:#f5f5f5;
+        margin:0;
+    }
+</style>
+</head>
+<body>
+
+<svg width="600" height="500" viewBox="0 0 600 500">
+    
+    <!-- Tail Feathers -->
+    <g transform="translate(300,250)">
+        <ellipse cx="-180" cy="-120" rx="60" ry="140" fill="#1abc9c"/>
+        <ellipse cx="-120" cy="-170" rx="60" ry="150" fill="#16a085"/>
+        <ellipse cx="-60" cy="-200" rx="60" ry="160" fill="#1abc9c"/>
+        <ellipse cx="0" cy="-220" rx="60" ry="170" fill="#16a085"/>
+        <ellipse cx="60" cy="-200" rx="60" ry="160" fill="#1abc9c"/>
+        <ellipse cx="120" cy="-170" rx="60" ry="150" fill="#16a085"/>
+        <ellipse cx="180" cy="-120" rx="60" ry="140" fill="#1abc9c"/>
+
+        <!-- Eyes on feathers -->
+        <g fill="#2c3e50">
+            <circle cx="-180" cy="-180" r="18"/>
+            <circle cx="-120" cy="-230" r="18"/>
+            <circle cx="-60" cy="-260" r="18"/>
+            <circle cx="0" cy="-280" r="18"/>
+            <circle cx="60" cy="-260" r="18"/>
+            <circle cx="120" cy="-230" r="18"/>
+            <circle cx="180" cy="-180" r="18"/>
+        </g>
+
+        <g fill="#f1c40f">
+            <circle cx="-180" cy="-180" r="8"/>
+            <circle cx="-120" cy="-230" r="8"/>
+            <circle cx="-60" cy="-260" r="8"/>
+            <circle cx="0" cy="-280" r="8"/>
+            <circle cx="60" cy="-260" r="8"/>
+            <circle cx="120" cy="-230" r="8"/>
+            <circle cx="180" cy="-180" r="8"/>
+        </g>
+    </g>
+
+    <!-- Body -->
+    <ellipse cx="300" cy="300" rx="40" ry="90" fill="#2980b9"/>
+
+    <!-- Neck -->
+    <rect x="285" y="170" width="30" height="120" rx="15" fill="#3498db"/>
+
+    <!-- Head -->
+    <circle cx="300" cy="150" r="30" fill="#3498db"/>
+
+    <!-- Eye -->
+    <circle cx="290" cy="145" r="4" fill="#000"/>
+
+    <!-- Beak -->
+    <polygon points="325,150 355,140 325,160" fill="#f39c12"/>
+
+    <!-- Crown -->
+    <line x1="290" y1="120" x2="285" y2="90" stroke="#2c3e50" stroke-width="3"/>
+    <line x1="300" y1="118" x2="300" y2="85" stroke="#2c3e50" stroke-width="3"/>
+    <line x1="310" y1="120" x2="315" y2="90" stroke="#2c3e50" stroke-width="3"/>
+
+    <circle cx="285" cy="90" r="5" fill="#1abc9c"/>
+    <circle cx="300" cy="85" r="5" fill="#1abc9c"/>
+    <circle cx="315" cy="90" r="5" fill="#1abc9c"/>
+
+    <!-- Legs -->
+    <line x1="290" y1="390" x2="280" y2="450" stroke="#8e5a2b" stroke-width="4"/>
+    <line x1="310" y1="390" x2="320" y2="450" stroke="#8e5a2b" stroke-width="4"/>
+
+</svg>
+
+</body>
+</html>
